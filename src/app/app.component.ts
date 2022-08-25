@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ejemplo';
+  numero = 0;
+  constructor(){
+    setInterval(() => {
+      this.numero++
+    }, 100);
+  }
 }
